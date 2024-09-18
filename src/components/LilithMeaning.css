@@ -1,0 +1,154 @@
+.lilith-meaning {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde más ligero con opacidad */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con algo de transparencia */
+    color: #fff; /* Texto blanco para contraste */
+    max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .lilith-meaning {
+        padding: 15px;
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .lilith-meaning {
+        padding: 10px;
+        font-size: 12px; /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
+    }
+}
+
+.lilith-meaning h1 {
+    color: #f0f0f0; /* Color blanco suave para los encabezados principales */
+    text-align: center;
+}
+
+.lilith-meaning h2 {
+    color: #ddd; /* Color gris claro para los subencabezados */
+    margin-top: 20px;
+}
+
+.lilith-meaning h3 {
+    color: #bbb; /* Color gris más oscuro para los encabezados de nivel 3 */
+    margin-top: 10px;
+}
+
+.lilith-meaning p {
+    color: #ccc; /* Color gris claro para el texto */
+    line-height: 1.6;
+}
+
+.lilith-meaning ul {
+    margin-top: 10px;
+}
+
+.lilith-meaning ul li {
+    color: #ccc; /* Color gris claro para los ítems de la lista */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el diagrama */
+.lilith-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo del círculo */
+    height: 400px;
+    margin: 20px auto; /* Centra el círculo */
+    border-radius: 50%; /* Mantiene la forma circular */
+    background-color: black; /* Fondo negro */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del círculo */
+    box-sizing: border-box;
+}
+
+.earth, .moon, .lilith {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px white; /* Contorno blanco alrededor de cada elemento */
+    max-width: 20%; /* Asegura que las imágenes se mantengan proporcionales */
+}
+
+.earth {
+    bottom: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.moon-orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px dashed #777; /* Borde gris claro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.moon {
+    top: 10%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.lilith {
+    top: 75%; /* Ajuste de la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Fondo blanco para Lilith */
+}
+
+/* Estilos responsivos para el diagrama */
+@media (max-width: 768px) {
+    .lilith-diagram {
+        max-width: 300px; /* Reduce el tamaño del círculo en pantallas medianas */
+        height: 300px;
+    }
+    .earth, .moon, .lilith {
+        max-width: 25%; /* Ajusta el tamaño de las imágenes proporcionalmente */
+    }
+}
+
+@media (max-width: 480px) {
+    .lilith-diagram {
+        max-width: 250px; /* Reduce aún más el tamaño del círculo en pantallas pequeñas */
+        height: 250px;
+    }
+    .earth, .moon, .lilith {
+        max-width: 30%; /* Ajusta el tamaño de las imágenes proporcionalmente */
+    }
+}
+
+/* Estilos para los nombres */
+.element-name {
+    position: absolute;
+    font-size: 16px; /* Aumentar tamaño del texto si es necesario */
+    color: #fff; /* Color blanco para que resalte sobre el fondo negro */
+    text-align: center;
+    font-weight: bold;
+    transform: translate(-50%, 20px); /* Mueve el texto hacia abajo */
+}
+
+.earth-name {
+    top: 40%; /* Coloca el texto debajo del elemento Tierra */
+    left: 20%;
+}
+
+.moon-name {
+    top: 15%; /* Coloca el texto debajo del elemento Luna */
+    left: 80%;
+}
+
+.lilith-name {
+    top: 50%; /* Coloca el texto debajo del elemento Lilith */
+    left: 50%;
+}

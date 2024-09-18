@@ -1,0 +1,34 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../public/images/universo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* Color de texto blanco para contraste */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el contenedor con algo de transparencia */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la tarjeta */
+  color: #fff; /* Color de texto blanco para la tarjeta */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero para contraste */
+}
+
+.btn {
+  background-color: #007bff; /* Botón azul */
+  color: #fff; /* Color del texto del botón */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Botón azul más oscuro al pasar el ratón */
+}
+
+h1, h2 {
+  color: #fff; /* Color del texto de los encabezados */
+}
