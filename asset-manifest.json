@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lilith-calculator/static/css/main.7aa01c2f.css",
-    "main.js": "/lilith-calculator/static/js/main.746714ec.js",
+    "main.css": "/lilith-calculator/static/css/main.b2b9d766.css",
+    "main.js": "/lilith-calculator/static/js/main.cbbae8c3.js",
     "static/media/earth.png": "/lilith-calculator/static/media/earth.62569ff3dbd59fbe8e8f.png",
     "static/media/moon.png": "/lilith-calculator/static/media/moon.773b6ec0918203f6c5ca.png",
     "static/media/universo.jpg": "/lilith-calculator/static/media/universo.9d421723e73db4a07a73.jpg",
     "static/media/lilith.png": "/lilith-calculator/static/media/lilith.f4e55fd3f6ec19de5055.png",
     "index.html": "/lilith-calculator/index.html",
-    "main.7aa01c2f.css.map": "/lilith-calculator/static/css/main.7aa01c2f.css.map",
-    "main.746714ec.js.map": "/lilith-calculator/static/js/main.746714ec.js.map"
+    "main.b2b9d766.css.map": "/lilith-calculator/static/css/main.b2b9d766.css.map",
+    "main.cbbae8c3.js.map": "/lilith-calculator/static/js/main.cbbae8c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aa01c2f.css",
-    "static/js/main.746714ec.js"
+    "static/css/main.b2b9d766.css",
+    "static/js/main.cbbae8c3.js"
   ]
 }
