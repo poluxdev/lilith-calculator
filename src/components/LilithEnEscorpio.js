@@ -1,19 +1,43 @@
-// src/components/LilithEnEscorpio.js
 import React from 'react';
 
-const LilithEnEscorpio = () => {
+const LilithEnEscorpio = ({ gender }) => {
   return (
     <div className="lilith-en-escorpio">
       <h1>Lilith en Escorpio</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Escorpio puede intensificar tu deseo de explorar las profundidades emocionales y psicológicas. Puede ser una invitación a confrontar y afirmar tu identidad a través de la transformación personal y la comprensión profunda de tus deseos y miedos más íntimos.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar una necesidad de independencia en la forma en que manejas tus emociones y en la búsqueda de poder personal. Puedes sentirte impulsado a seguir tus propios principios y a buscar la autonomía en cómo enfrentas las dinámicas de poder y control.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Escorpio puede infundir un sentido de coraje para enfrentar tus miedos más profundos y para explorar áreas de tu vida que a menudo permanecen ocultas. Puedes sentir una necesidad de confrontar los aspectos más oscuros de tu psique con determinación y valentía.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Escorpio puede llevar a una relación intensa con la ira y la frustración. Puedes necesitar aprender a canalizar estos sentimientos de manera constructiva para evitar conflictos destructivos y para manejar el poder personal con sabiduría.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa en situaciones que requieren un enfoque profundo y transformador. Puedes sentirte impulsado a liderar en contextos que demandan un entendimiento profundo y una transformación significativa.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Escorpio puede estimular una mayor autoafirmación y confianza en tu capacidad para enfrentar los desafíos emocionales y psicológicos. Puedes tener una fuerte necesidad de demostrar tu fortaleza y tu habilidad para superar obstáculos internos y externos.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad y la exposición emocional. La tarea puede ser aprender a equilibrar tu deseo de control con la aceptación de tus propias limitaciones y necesidades emocionales.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Escorpio puede llevarte a enfrentar y resolver conflictos internos y externos como una forma de crecimiento personal. Aprender a gestionar estos conflictos de manera efectiva puede ser clave para tu desarrollo y transformación personal.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Escorpio es encontrar un equilibrio entre la exploración profunda de tus emociones y la capacidad de manejar el poder personal de manera saludable.</p>
+      <p>
+        Lilith en Escorpio es una de las posiciones más intensas y transformadoras. Aquí, la energía de Lilith se 
+        une con la profundidad emocional y la fuerza regeneradora de Escorpio, lo que genera una personalidad 
+        magnética, apasionada y misteriosa, pero también con tendencias a vivir experiencias extremas.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Escorpio en la carta natal de una mujer</h2>
+          <p><strong>Magnetismo y sensualidad:</strong> Posee una energía poderosa que puede atraer o intimidar a los demás.</p>
+          <p><strong>Instinto y profundidad emocional:</strong> Tiene una capacidad innata para percibir verdades ocultas y una fuerte conexión con su intuición.</p>
+          <p><strong>Transformación constante:</strong> A lo largo de su vida, experimentará crisis profundas que la llevarán a renacer más fuerte.</p>
+          <p><strong>Sombra y transformación:</strong> Puede caer en dinámicas de control, obsesión o relaciones tóxicas si no aprende a canalizar su poder de manera constructiva.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Escorpio en la carta natal de un hombre</h2>
+          <p><strong>Atracción por lo oculto:</strong> Se siente fascinado por lo misterioso, lo prohibido y las emociones intensas.</p>
+          <p><strong>Relaciones profundas e intensas:</strong> No busca vínculos superficiales, sino conexiones que lo transformen por completo.</p>
+          <p><strong>Control y poder:</strong> Puede tener una necesidad inconsciente de dominar en las relaciones, lo que puede generar conflictos.</p>
+          <p><strong>Sombra y evolución personal:</strong> Su desafío es aprender a soltar el miedo a la vulnerabilidad y dejar de ver las emociones como una forma de control.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Escorpio</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Aprender a usar su poder interno sin caer en la manipulación o el resentimiento.</li>
+        <li><strong>Para el hombre:</strong> Sanar su relación con la intensidad emocional y entender que el control no es sinónimo de fuerza.</li>
+      </ul>
+
+      <p>
+        Lilith en Escorpio es una energía de transformación y renacimiento. Aceptar la intensidad emocional y 
+        canalizarla de manera consciente permite convertir el dolor en poder personal.
+      </p>
     </div>
   );
 };

@@ -1,19 +1,40 @@
-// src/components/LilithEnGeminis.js
 import React from 'react';
 
-const LilithEnGeminis = () => {
+const LilithEnGeminis = ({ gender }) => {
   return (
     <div className="lilith-en-geminis">
       <h1>Lilith en Géminis</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Géminis puede intensificar tu deseo de comunicarte de manera auténtica y explorar tu mente y curiosidad. Puedes sentir una fuerte necesidad de expresarte a través de palabras, ideas y conexiones mentales.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar un deseo de independencia en tus pensamientos y en tu forma de comunicarte. Es posible que te sientas impulsado a seguir tus propios intereses y a buscar experiencias que te permitan expandir tu conocimiento y habilidades.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Géminis puede infundir un sentido de valentía en la expresión de tus ideas y en la búsqueda de nuevas experiencias. Puedes enfrentar desafíos con una mente abierta y estar dispuesto a explorar diferentes perspectivas y enfoques.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Géminis puede llevar a una relación complicada con la frustración relacionada con la comunicación y el intercambio de ideas. Puedes necesitar aprender a manejar y canalizar estos sentimientos para evitar malentendidos y conflictos innecesarios.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa en la búsqueda de nuevas ideas y proyectos. Puedes sentirte impulsado a liderar en áreas que requieran pensamiento innovador y adaptabilidad.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Géminis puede estimular una mayor autoafirmación en relación con tu capacidad para comunicarte y aprender. Puedes sentir una fuerte necesidad de demostrar tu valía a través de tu ingenio y habilidades comunicativas.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte enfrentando temas relacionados con la autoexpresión y el miedo al rechazo. La tarea puede ser aprender a equilibrar tu necesidad de comunicarte con la aceptación de tus propias inseguridades y limitaciones.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Géminis puede llevarte a enfrentar y resolver conflictos relacionados con la comunicación y el intercambio de ideas como una forma de crecimiento personal. Aprender a negociar y manejar estos conflictos puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Géminis es encontrar un equilibrio entre la exploración mental y la capacidad de manejar las complejidades de la comunicación.</p>
+      <p>
+        Lilith en Géminis se manifiesta en una mente inquieta, curiosa y rebelde. Es una posición que potencia la inteligencia,
+        la comunicación provocadora y la capacidad de desafiar las normas establecidas con palabras y pensamientos. Puede generar
+        un deseo intenso de explorar ideas prohibidas y un magnetismo en la forma de expresarse.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Géminis en la carta natal de una mujer</h2>
+          <p><strong>Intelecto provocador:</strong> Su mente es afilada, inquieta y poco convencional. No teme hacer preguntas incómodas o desafiar la lógica tradicional.</p>
+          <p><strong>Magnetismo en la comunicación:</strong> Su forma de hablar puede ser seductora y desafiante, atrayendo la atención con facilidad.</p>
+          <p><strong>Rechazo a la monotonía:</strong> Se siente atrapada en entornos repetitivos o en relaciones carentes de estimulación intelectual.</p>
+          <p><strong>Sombras y transformación:</strong> Puede caer en el juego de la manipulación verbal o en una constante indecisión. Aprender a equilibrar su poder mental con estabilidad emocional es clave.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Géminis en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres inteligentes y perspicaces:</strong> Se siente fascinado por mujeres con una gran capacidad intelectual y un estilo de comunicación audaz.</p>
+          <p><strong>Curiosidad insaciable:</strong> Es alguien que necesita variedad en su vida amorosa y mental. Puede sentirse insatisfecho si no hay constante estimulación.</p>
+          <p><strong>Desafíos en la comunicación:</strong> Puede tener conflictos al expresar sus emociones más profundas, ya que prefiere mantenerse en la superficie intelectual.</p>
+          <p><strong>Sombra y evolución personal:</strong> Puede caer en el juego de la manipulación verbal o en relaciones inestables por su miedo al compromiso.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Géminis</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Aprender a usar su don de la palabra sin caer en la manipulación o el sarcasmo excesivo.</li>
+        <li><strong>Para el hombre:</strong> Aceptar que la profundidad emocional es tan importante como la conexión intelectual en una relación.</li>
+      </ul>
+
+      <p>Lilith en Géminis invita a explorar el poder de la mente y la palabra, pero con conciencia y responsabilidad.</p>
     </div>
   );
 };

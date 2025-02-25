@@ -1,19 +1,32 @@
 import React from 'react';
- // Asegúrate de que el archivo CSS esté importado
 
-const LilithEnAries = () => {
+const LilithEnAries = ({ gender }) => {
   return (
     <div className="lilith-en-aries">
-      <h1>Lilith en Aries</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Aries puede intensificar tu deseo de expresarte auténticamente y de ser tú mismo sin restricciones. Puede ser una invitación a explorar y afirmar tu identidad personal y tus deseos más profundos.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición a menudo indica una necesidad fuerte de independencia y autonomía. Puede que te sientas impulsado a tomar decisiones por ti mismo y a seguir tu propio camino, a veces desafiando las expectativas o normas establecidas.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Aries puede infundir un sentido de coraje y assertividad. Puedes sentir una necesidad de enfrentarte a tus miedos y desafíos con valentía, y de defender tus creencias y derechos con determinación.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Aries puede llevar a una relación complicada con la ira y la frustración. Puedes necesitar aprender a canalizar y gestionar estos sentimientos de manera constructiva para evitar conflictos innecesarios.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa y liderar en diferentes áreas de tu vida. Puedes sentirte impulsado a comenzar nuevos proyectos o a asumir roles de liderazgo con entusiasmo y energía.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Aries puede estimular una mayor autoafirmación y confianza en ti mismo. Puedes tener una fuerte necesidad de demostrar tu valía y tus habilidades, y a menudo te sientes más cómodo asumiendo riesgos y enfrentando desafíos.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad y el miedo al fracaso. La tarea puede ser aprender a equilibrar tu deseo de ser fuerte e independiente con la aceptación de tus propias limitaciones y necesidades.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Aries puede llevarte a enfrentar y resolver conflictos internos y externos como una forma de crecimiento personal. Aprender a negociar y manejar conflictos de manera efectiva puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Aries es encontrar un equilibrio entre la expresión personal audaz y la capacidad de gestionar los desafíos y las emociones de manera saludable.</p>
+      <h1>Lilith en Aries en la Carta Natal</h1>
+      <p>
+        Lilith en Aries es una posición intensa, ya que Aries es un signo de fuego regido por Marte, lo que le otorga una energía fuerte, impulsiva y combativa. Lilith aquí se expresa con una independencia extrema, deseo de liderazgo y una actitud desafiante hacia la autoridad o las limitaciones impuestas por la sociedad.
+      </p>
+      {gender === "Mujer" ? (
+        <>
+          <h2>Mujer con Lilith en Aries</h2>
+          <p><strong>Mujer indomable y de fuerte carácter:</strong> Una mujer con Lilith en Aries es una guerrera nata, no teme luchar por lo que quiere. Es una mujer que prefiere tomar la iniciativa en la vida y no espera la aprobación de los demás.</p>
+          <p><strong>Rebelión contra los roles tradicionales:</strong> No tolera que la controlen o le digan cómo debe comportarse. Puede sentir rechazo por los estereotipos de género que limitan su libertad.</p>
+          <p><strong>Atracción por desafíos y relaciones intensas:</strong> En el amor, busca relaciones apasionadas, pero puede tener dificultades con la estabilidad. Puede sentirse atraída por personas con una fuerte energía marciana (Aries, Escorpio) o con personalidades dominantes, pero al mismo tiempo, le molesta sentir que alguien intenta controlarla.</p>
+          <p><strong>Sombra y transformación:</strong> Puede tener tendencia a la impulsividad, la rabia reprimida o la necesidad de demostrar siempre su fuerza. Su desafío es aprender a equilibrar su fuego interno sin caer en el exceso de confrontación o agresividad.</p>
+          <p><strong>Consejo:</strong> Aprender a equilibrar la independencia con la vulnerabilidad sin sentir que mostrar emociones es debilidad.</p>
+        </>
+      ) : (
+        <>
+          <h2>Hombre con Lilith en Aries</h2>
+          <p><strong>Atracción por mujeres fuertes e independientes:</strong> Lilith en Aries en la carta de un hombre indica que se siente fascinado por mujeres audaces, directas e indomables. Puede atraer relaciones con mujeres que no necesitan ser rescatadas, sino que son líderes por naturaleza.</p>
+          <p><strong>Conflictos con el poder femenino:</strong> Si no ha trabajado bien su Lilith, puede tener dificultades para aceptar la independencia femenina. Puede sentir que las mujeres que le atraen lo desafían o lo hacen sentir inseguro.</p>
+          <p><strong>Impulsividad en el amor y el deseo:</strong> Tiende a experimentar la atracción y la sexualidad de forma intensa e inmediata. Puede tener una actitud dominante en la intimidad, pero también sentirse dominado por su deseo.</p>
+          <p><strong>Sombra y evolución personal:</strong> Su mayor reto es aprender a manejar la competencia en las relaciones sin ver a su pareja como un rival. Si reprime esta energía, puede proyectarla en relaciones conflictivas o en una constante búsqueda de adrenalina en su vida amorosa.</p>
+          <p><strong>Consejo:</strong> Aceptar que la fuerza femenina no es una amenaza, sino una oportunidad de crecimiento y equilibrio.</p>
+        </>
+      )}
+      <p><strong>Reflexión final:</strong> Lilith en Aries invita tanto a hombres como a mujeres a conectar con su autenticidad sin miedo al juicio, pero también sin caer en la impulsividad destructiva. ¡Es una energía poderosa si se canaliza bien!</p>
     </div>
   );
 };

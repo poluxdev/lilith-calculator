@@ -1,19 +1,41 @@
-// src/components/LilithEnLeo.js
 import React from 'react';
 
-const LilithEnLeo = () => {
+const LilithEnLeo = ({ gender }) => {
   return (
     <div className="lilith-en-leo">
       <h1>Lilith en Leo</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Leo puede intensificar tu deseo de destacar y ser el centro de atención. Puede ser una invitación a explorar y expresar tu creatividad, tus talentos y tu necesidad de reconocimiento y aprecio.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar una fuerte necesidad de independencia en la forma en que te expresas y en tu búsqueda de admiración. Puedes sentirte impulsado a seguir tus propios deseos y a buscar una forma auténtica de brillar en tu vida.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Leo puede infundir un sentido de coraje para mostrarte tal como eres y para defender tu derecho a ser visto y valorado. Puedes sentir una necesidad de enfrentarte a tus miedos y desafíos con confianza y determinación.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Leo puede llevar a una relación complicada con la ira y la frustración en relación con la autoafirmación y el reconocimiento. Puedes necesitar aprender a manejar estos sentimientos de manera constructiva para evitar conflictos innecesarios.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para asumir roles de liderazgo y para tomar la iniciativa en proyectos creativos o en la búsqueda de reconocimiento. Puedes sentirte impulsado a destacar y a influir en los demás con tu presencia y entusiasmo.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Leo puede estimular una mayor autoafirmación y confianza en tu capacidad para atraer atención y admiración. Puedes tener una fuerte necesidad de demostrar tu valía y de mostrar tus talentos y habilidades con orgullo.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad y el miedo al rechazo en el contexto de tu autoexpresión. La tarea puede ser aprender a equilibrar tu deseo de ser el centro de atención con la aceptación de tus propias inseguridades y limitaciones.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Leo puede llevarte a enfrentar y resolver conflictos relacionados con la autoexpresión y el reconocimiento como una forma de crecimiento personal. Aprender a manejar y resolver estos conflictos de manera efectiva puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Leo es encontrar un equilibrio entre la autoexpresión audaz y la capacidad de gestionar los desafíos en la búsqueda de reconocimiento y admiración.</p>
+      <p>
+        Lilith en Leo se manifiesta como una fuerte necesidad de ser reconocida y valorada. 
+        Hay un deseo de brillar con luz propia, pero también una lucha interna con el ego y la autoimagen.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Leo en la carta natal de una mujer</h2>
+          <p><strong>Carácter fuerte y magnético:</strong> Posee una gran presencia y es imposible ignorarla. Siente la necesidad de ser auténtica sin importar las opiniones ajenas.</p>
+          <p><strong>Deseo de reconocimiento:</strong> Le gusta destacar en cualquier ámbito, pero puede sentirse frustrada si no recibe la validación que espera.</p>
+          <p><strong>Atracción por el drama y la pasión:</strong> En el amor busca intensidad y emoción. Puede atraer relaciones donde el juego de poder sea constante.</p>
+          <p><strong>Sombra y transformación:</strong> Su reto es aprender a brillar sin depender de la aprobación externa. La autosuficiencia emocional es clave.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Leo en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres carismáticas:</strong> Se siente fascinado por mujeres seguras, creativas y con una fuerte presencia.</p>
+          <p><strong>Conflicto con el reconocimiento:</strong> Puede sentir la necesidad de ser admirado, pero al mismo tiempo temer que su brillo sea eclipsado.</p>
+          <p><strong>Ego y deseo de liderazgo:</strong> Tiene un gran carisma natural, pero puede caer en la arrogancia o en la búsqueda constante de validación.</p>
+          <p><strong>Sombra y evolución personal:</strong> Debe aprender a liderar desde la autenticidad y no desde la necesidad de dominio o admiración excesiva.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Leo</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Desarrollar su confianza sin depender del reconocimiento externo.</li>
+        <li><strong>Para el hombre:</strong> Entender que el brillo ajeno no opaca el suyo, sino que lo complementa.</li>
+      </ul>
+
+      <p>
+        Lilith en Leo enseña a conectar con la verdadera esencia sin caer en la trampa del ego o la necesidad de ser siempre el centro de atención.
+      </p>
     </div>
   );
 };

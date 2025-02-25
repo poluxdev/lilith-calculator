@@ -1,19 +1,43 @@
-// src/components/LilithEnLibra.js
 import React from 'react';
 
-const LilithEnLibra = () => {
+const LilithEnLibra = ({ gender }) => {
   return (
     <div className="lilith-en-libra">
       <h1>Lilith en Libra</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Libra puede intensificar tu deseo de establecer relaciones equilibradas y armoniosas. Puede ser una invitación a explorar y afirmar tu identidad a través de la interacción con los demás y en la búsqueda de justicia y equidad en tus relaciones.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar una necesidad de independencia en cómo manejas tus relaciones y en tu búsqueda de equilibrio. Puedes sentirte impulsado a seguir tus propios principios y a buscar la autonomía dentro de la dinámica de tus asociaciones.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Libra puede infundir un sentido de coraje para enfrentar desafíos en tus relaciones y en la búsqueda de equilibrio y justicia. Puedes sentir una necesidad de defender tus valores y tus derechos en el contexto de tus interacciones con los demás.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Libra puede llevar a una relación complicada con la ira y la frustración en el contexto de las relaciones y el equilibrio. Puedes necesitar aprender a manejar estos sentimientos de manera constructiva para evitar conflictos innecesarios en tus interacciones.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa en la búsqueda de la justicia y la armonía en tus relaciones. Puedes sentirte impulsado a liderar en situaciones que requieren un sentido de equidad y balance.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Libra puede estimular una mayor autoafirmación y confianza en tu habilidad para establecer relaciones equilibradas y justas. Puedes tener una fuerte necesidad de demostrar tu valía a través de tu capacidad para negociar y mantener la armonía.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad en el contexto de las relaciones y la búsqueda de equilibrio. La tarea puede ser aprender a equilibrar tu deseo de armonía con la aceptación de tus propias limitaciones y necesidades en las interacciones.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Libra puede llevarte a enfrentar y resolver conflictos relacionados con las relaciones y el equilibrio como una forma de crecimiento personal. Aprender a negociar y manejar estos conflictos de manera efectiva puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Libra es encontrar un equilibrio entre la búsqueda de la armonía en las relaciones y la capacidad de gestionar los desafíos de manera constructiva.</p>
+      <p>
+        Lilith en Libra se manifiesta en la tensión entre el deseo de armonía y la necesidad de autonomía. 
+        Esta posición resalta temas de relaciones, justicia y equilibrio, pero también puede generar conflictos 
+        en la forma de vincularse con los demás.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Libra en la carta natal de una mujer</h2>
+          <p><strong>Encanto y magnetismo:</strong> Tiene una presencia atractiva y un carisma natural que la hace destacar en los círculos sociales.</p>
+          <p><strong>Independencia vs. relaciones:</strong> Puede debatirse entre su deseo de pareja y su miedo a perder su identidad dentro de una relación.</p>
+          <p><strong>Rebelión contra la dependencia:</strong> No soporta las relaciones basadas en la sumisión o el control. Busca un vínculo de igualdad.</p>
+          <p><strong>Sombra y transformación:</strong> Su reto es encontrar un equilibrio entre el amor propio y el amor por los demás sin caer en la complacencia.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Libra en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres sofisticadas:</strong> Le fascinan las mujeres elegantes, inteligentes y con un fuerte sentido de la justicia.</p>
+          <p><strong>Miedo a la vulnerabilidad:</strong> Puede evitar los conflictos en las relaciones, reprimiendo sus verdaderas emociones.</p>
+          <p><strong>Idealización del amor:</strong> Busca la relación perfecta, lo que puede llevar a decepciones cuando la realidad no cumple sus expectativas.</p>
+          <p><strong>Sombra y evolución personal:</strong> Debe aprender a enfrentar los problemas de pareja en lugar de ignorarlos en busca de una falsa armonía.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Libra</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Aprender a equilibrar su deseo de amor con su necesidad de independencia.</li>
+        <li><strong>Para el hombre:</strong> Aceptar que el amor no siempre es ideal y que los conflictos son parte del crecimiento en pareja.</li>
+      </ul>
+
+      <p>
+        Lilith en Libra invita a explorar el equilibrio entre la individualidad y la conexión con los demás. 
+        La clave está en construir relaciones basadas en la autenticidad y la igualdad.
+      </p>
     </div>
   );
 };

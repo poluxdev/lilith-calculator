@@ -1,19 +1,43 @@
-// src/components/LilithEnAcuario.js
 import React from 'react';
 
-const LilithEnAcuario = () => {
+const LilithEnAcuario = ({ gender }) => {
   return (
     <div className="lilith-en-acuario">
       <h1>Lilith en Acuario</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Acuario puede intensificar tu deseo de expresar tu individualidad y de conectar con ideas innovadoras. Puede ser una invitación a explorar y afirmar tu identidad a través de la originalidad y la libertad de pensamiento.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición a menudo indica una necesidad fuerte de independencia en tus ideas y en tu forma de ver el mundo. Puedes sentirte impulsado a seguir un camino único y a desafiar las normas establecidas, buscando maneras creativas de expresar tu autenticidad.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Acuario puede infundir un sentido de coraje para enfrentar lo desconocido y desafiar el status quo. Puedes sentir una necesidad de abogar por cambios y reformas, y de defender tus creencias con determinación y convicción.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Acuario puede llevar a una relación complicada con la ira, especialmente en el contexto de tus ideales y aspiraciones. Puedes necesitar aprender a gestionar tus frustraciones de manera constructiva y a evitar conflictos innecesarios relacionados con tus valores y metas.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para liderar en el ámbito de las ideas y la innovación. Puedes sentirte impulsado a tomar la iniciativa en proyectos que desafíen las normas y promuevan el cambio, asumiendo roles de liderazgo en áreas relacionadas con la tecnología y la sociología.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Acuario puede estimular una mayor autoafirmación y confianza en tus ideas y visiones para el futuro. Puedes tener una fuerte necesidad de demostrar tu originalidad y de enfrentar desafíos con una actitud abierta y progresista.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad en la búsqueda de aceptación de tus ideas y en el desafío de las normas sociales. La tarea puede ser aprender a equilibrar tu deseo de innovar con la aceptación de tus propias limitaciones y la necesidad de conexión emocional.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Acuario puede llevarte a enfrentar y resolver conflictos internos y externos relacionados con tus ideales y aspiraciones. Aprender a negociar y manejar estos conflictos de manera efectiva puede ser clave para tu desarrollo personal y profesional.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Acuario es encontrar un equilibrio entre la expresión innovadora y la capacidad de gestionar los desafíos y las emociones de manera saludable.</p>
+      <p>
+        Lilith en Acuario trae una energía revolucionaria, irreverente y poco convencional. Las personas con esta posición 
+        sienten un fuerte deseo de romper con las normas establecidas y desafiar lo tradicional, buscando siempre la libertad 
+        y la autenticidad.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Acuario en la carta natal de una mujer</h2>
+          <p><strong>Espíritu libre e independiente:</strong> No tolera restricciones y necesita expresarse con total autenticidad.</p>
+          <p><strong>Rechazo a lo convencional:</strong> Puede desafiar los roles de género tradicionales y apostar por una visión más igualitaria.</p>
+          <p><strong>Atracción por lo diferente:</strong> Se siente fascinada por personas y experiencias fuera de lo común.</p>
+          <p><strong>Sombra y transformación:</strong> Puede desconectarse emocionalmente en su afán de independencia.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Acuario en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres únicas e independientes:</strong> Le gustan las mujeres que rompen con los estereotipos y son innovadoras.</p>
+          <p><strong>Desafíos con el compromiso:</strong> Puede temer perder su libertad en una relación seria.</p>
+          <p><strong>Pensamiento radical e inconformista:</strong> A menudo se siente diferente y puede rechazar la autoridad.</p>
+          <p><strong>Sombra y evolución personal:</strong> Debe aprender a encontrar un equilibrio entre libertad e intimidad.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Acuario</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Aceptar que la independencia no significa estar sola y que la conexión con otros puede ser enriquecedora.</li>
+        <li><strong>Para el hombre:</strong> Aprender que la libertad verdadera se basa en la confianza y no en la evasión del compromiso.</li>
+      </ul>
+
+      <p>
+        Lilith en Acuario es una energía que rompe barreras y desafía lo establecido. Integrarla de manera equilibrada 
+        permite innovar sin perder el contacto con las emociones y el mundo real.
+      </p>
     </div>
   );
 };

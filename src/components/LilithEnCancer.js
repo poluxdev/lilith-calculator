@@ -1,19 +1,39 @@
-// src/components/LilithEnCancer.js
 import React from 'react';
 
-const LilithEnCancer = () => {
+const LilithEnCancer = ({ gender }) => {
   return (
     <div className="lilith-en-cancer">
       <h1>Lilith en Cáncer</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Cáncer puede intensificar tu conexión con tus emociones más profundas y tu necesidad de proteger y cuidar a los demás. Puedes sentir una fuerte inclinación a explorar y expresar tus sentimientos más íntimos y a crear un entorno seguro y acogedor.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar un deseo de independencia emocional y una necesidad de establecer tus propios límites en tus relaciones personales. Puedes buscar formas de equilibrar tu deseo de cuidar con la necesidad de mantener tu propio espacio y autonomía.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Cáncer puede infundir un sentido de coraje en la defensa de tus valores emocionales y familiares. Puedes sentir una fuerte necesidad de proteger tus intereses y los de tus seres queridos, y de enfrentarte a situaciones que amenacen tu bienestar emocional.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Cáncer puede llevar a una relación complicada con la ira y la frustración en el contexto familiar y emocional. Puedes necesitar aprender a manejar y canalizar estos sentimientos de manera saludable para evitar conflictos en tus relaciones cercanas.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para liderar en el ámbito emocional y doméstico. Puedes sentirte impulsado a tomar la iniciativa en la creación de un ambiente familiar armonioso y en el cuidado de tus seres queridos.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Cáncer puede estimular una mayor autoafirmación en relación con tu identidad emocional y tu papel en la familia. Puedes tener una fuerte necesidad de demostrar tu capacidad para proporcionar apoyo y seguridad, y de enfrentar desafíos emocionales con determinación.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte enfrentando temas relacionados con la vulnerabilidad emocional y el miedo al rechazo en el ámbito familiar. La tarea puede ser aprender a equilibrar tu deseo de proteger a los demás con la aceptación de tus propias necesidades y limitaciones.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Cáncer puede llevarte a enfrentar y resolver conflictos emocionales y familiares como una forma de crecimiento personal. Aprender a negociar y manejar estos conflictos de manera efectiva puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Cáncer es encontrar un equilibrio entre la expresión emocional profunda y la capacidad de gestionar los desafíos en tus relaciones personales.</p>
+      <p>
+        Lilith en Cáncer se asocia con emociones intensas, una relación compleja con la familia y un fuerte instinto protector.
+        Puede manifestarse como una lucha entre el deseo de independencia y la necesidad de seguridad emocional.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Cáncer en la carta natal de una mujer</h2>
+          <p><strong>Fuerza emocional y sensibilidad:</strong> Es una mujer con un mundo emocional profundo, pero puede sentirse incómoda mostrando vulnerabilidad.</p>
+          <p><strong>Relación compleja con la familia:</strong> Puede haber una historia de rebeldía contra roles familiares tradicionales o una sensación de no encajar en su núcleo familiar.</p>
+          <p><strong>Atracción por lo oculto y misterioso:</strong> Le interesa lo esotérico, los misterios del pasado y las emociones profundas.</p>
+          <p><strong>Sombras y transformación:</strong> Puede caer en el control emocional o la manipulación afectiva para protegerse de heridas del pasado.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Cáncer en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres intensamente emocionales:</strong> Se siente fascinado por mujeres con una energía maternal fuerte o con una sensibilidad especial.</p>
+          <p><strong>Conflictos con el apego:</strong> Puede experimentar miedo al compromiso y, al mismo tiempo, un fuerte deseo de conexión emocional.</p>
+          <p><strong>Instintos protectores:</strong> Tiene una necesidad innata de cuidar a otros, aunque puede sentirse atrapado en relaciones donde asume el papel de protector.</p>
+          <p><strong>Sombra y evolución personal:</strong> Debe aprender a establecer límites emocionales y reconocer que la vulnerabilidad no es debilidad.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Cáncer</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Aprender a equilibrar su necesidad de seguridad con su deseo de independencia.</li>
+        <li><strong>Para el hombre:</strong> Aceptar la profundidad emocional sin verla como una amenaza a su masculinidad.</li>
+      </ul>
+
+      <p>Lilith en Cáncer nos enseña a honrar nuestras emociones sin permitir que el miedo nos controle.</p>
     </div>
   );
 };

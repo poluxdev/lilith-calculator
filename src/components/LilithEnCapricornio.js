@@ -1,20 +1,43 @@
-
-// src/components/LilithEnCapricornio.js
 import React from 'react';
 
-const LilithEnCapricornio = () => {
+const LilithEnCapricornio = ({ gender }) => {
   return (
     <div className="lilith-en-capricornio">
       <h1>Lilith en Capricornio</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Capricornio puede intensificar tu deseo de establecer una base sólida y de asumir responsabilidades. Puede ser una invitación a explorar y afirmar tu identidad a través de la construcción de estructuras y el logro de metas ambiciosas.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición a menudo indica una necesidad fuerte de independencia en tus esfuerzos por alcanzar el éxito y la estabilidad. Puedes sentirte impulsado a tomar decisiones por ti mismo y a trabajar duro para lograr tus objetivos, a veces desafiando las expectativas establecidas.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Capricornio puede infundir un sentido de coraje y determinación para enfrentar desafíos y superar obstáculos. Puedes sentir una necesidad de demostrar tu capacidad para asumir roles de liderazgo y para afrontar las responsabilidades con firmeza y resolución.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Capricornio puede llevar a una relación complicada con la ira y la frustración, especialmente en el contexto de tus metas y responsabilidades. Puedes necesitar aprender a gestionar estos sentimientos de manera constructiva para evitar conflictos innecesarios y mantener la estabilidad en tu vida.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa en la construcción de una carrera o proyecto a largo plazo. Puedes sentirte impulsado a asumir roles de liderazgo y a trabajar con dedicación y disciplina para alcanzar tus metas profesionales y personales.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Capricornio puede estimular una mayor autoafirmación y confianza en tu capacidad para establecer logros y éxitos. Puedes tener una fuerte necesidad de demostrar tu valía y de enfrentar desafíos con una actitud responsable y enfocada.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte confrontando temas relacionados con la vulnerabilidad en la búsqueda de éxito y estabilidad. La tarea puede ser aprender a equilibrar tu deseo de alcanzar grandes logros con la aceptación de tus propias limitaciones y necesidades emocionales.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Capricornio puede llevarte a enfrentar y resolver conflictos internos y externos relacionados con tus objetivos y responsabilidades. Aprender a negociar y manejar estos conflictos de manera efectiva puede ser clave para tu crecimiento personal y profesional.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Capricornio es encontrar un equilibrio entre la ambición y la capacidad de gestionar los desafíos y las emociones de manera saludable.</p>
+      <p>
+        Lilith en Capricornio otorga una energía ambiciosa, disciplinada y con un fuerte deseo de control. Esta posición 
+        puede generar una intensa lucha entre el deseo de éxito y la necesidad de liberarse de estructuras rígidas impuestas 
+        por la sociedad o la familia.
+      </p>
+
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Capricornio en la carta natal de una mujer</h2>
+          <p><strong>Ambición y determinación:</strong> Siente una fuerte necesidad de alcanzar el éxito y demostrar su valía.</p>
+          <p><strong>Independencia profesional:</strong> No le gusta depender de nadie y busca construir su propio camino.</p>
+          <p><strong>Control sobre sus emociones:</strong> Puede ser reservada y evitar mostrar vulnerabilidad para no parecer débil.</p>
+          <p><strong>Sombra y transformación:</strong> Debe aprender a equilibrar su rigidez con la apertura emocional para no aislarse.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Capricornio en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres fuertes y poderosas:</strong> Se siente fascinado por mujeres exitosas y con autoridad.</p>
+          <p><strong>Deseo de control:</strong> Puede tener dificultades para soltar el control en sus relaciones personales.</p>
+          <p><strong>Alta exigencia consigo mismo:</strong> Puede ser muy duro con sus propias expectativas y sentir una gran presión interna.</p>
+          <p><strong>Sombra y evolución personal:</strong> Debe aprender a confiar en los demás y soltar el miedo a la vulnerabilidad.</p>
+        </>
+      )}
+
+      <h2>Consejos para integrar Lilith en Capricornio</h2>
+      <ul>
+        <li><strong>Para la mujer:</strong> Permitir que su ambición conviva con el placer de disfrutar la vida sin presión constante.</li>
+        <li><strong>Para el hombre:</strong> Aprender a valorar las emociones y no medir el éxito solo por logros materiales.</li>
+      </ul>
+
+      <p>
+        Lilith en Capricornio representa una lucha entre la necesidad de control y la importancia de fluir. Integrar 
+        esta energía de manera equilibrada permite alcanzar el éxito sin sacrificar la conexión emocional.
+      </p>
     </div>
   );
 };

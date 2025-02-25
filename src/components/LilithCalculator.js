@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import './LilithCalculator.css'; // Importar el archivo de estilos
 import LilithEnAries from './LilithEnAries';
 import LilithEnTauro from './LilithEnTauro';
 import LilithEnGeminis from './LilithEnGeminis';
@@ -14,9 +15,11 @@ import LilithEnPiscis from './LilithEnPiscis';
 
 const LilithCalculator = ({ onSignCalculated }) => {
     const [birthdate, setBirthdate] = useState('');
-    const [resultSign, setResultSign] = useState('');
+    const [gender, setGender] = useState('');
+    const [resultSign, setResultSign] = useState(null);
 
-    const lilithPeriods = [
+
+    const lilithPeriods = useMemo(() => [
         { sign: "Aries", startDate: new Date('1975-10-31'), endDate: new Date('1976-07-26') },
         { sign: "Tauro", startDate: new Date('1976-07-27'), endDate: new Date('1977-04-22') },
         { sign: "Géminis", startDate: new Date('1977-04-23'), endDate: new Date('1978-01-18') },
@@ -84,65 +87,106 @@ const LilithCalculator = ({ onSignCalculated }) => {
         { sign: "Leo", startDate: new Date('2023-02-20'), endDate: new Date('2023-11-15') },
         { sign: "Virgo", startDate: new Date('2023-11-16'), endDate: new Date('2024-08-12') },
         { sign: "Libra", startDate: new Date('2024-08-13'), endDate: new Date('2025-05-08') },
-    ];
+    
+      ], []);
+      
+
+    const signComponents = {
+        "Aries": LilithEnAries,
+        "Tauro": LilithEnTauro,
+        "Géminis": LilithEnGeminis,
+        "Cáncer": LilithEnCancer,
+        "Leo": LilithEnLeo,
+        "Virgo": LilithEnVirgo,
+        "Libra": LilithEnLibra,
+        "Escorpio": LilithEnEscorpio,
+        "Sagitario": LilithEnSagitario,
+        "Capricornio": LilithEnCapricornio,
+        "Acuario": LilithEnAcuario,
+        "Piscis": LilithEnPiscis,
+    };
 
     const calculateLilith = () => {
-        const userDate = new Date(birthdate);
-
-        let lilithSign = 'No disponible';
-
-        for (let i = 0; i < lilithPeriods.length; i++) {
-            if (userDate >= lilithPeriods[i].startDate && userDate <= lilithPeriods[i].endDate) {
-                lilithSign = lilithPeriods[i].sign;
-                break;
-            }
+        if (!birthdate) {
+            setResultSign("Por favor, ingresa una fecha válida.");
+            return;
         }
+
+        if (!gender) {
+            setResultSign("Por favor, selecciona tu género.");
+            return;
+        }
+
+        const userDate = new Date(birthdate);
+        if (isNaN(userDate.getTime())) {
+            setResultSign("Fecha inválida. Usa el formato YYYY-MM-DD.");
+            return;
+        }
+
+        const lilithSign = lilithPeriods.find(period =>
+            userDate >= period.startDate && userDate <= period.endDate
+        )?.sign || "No disponible";
 
         setResultSign(lilithSign);
         if (typeof onSignCalculated === 'function') {
             onSignCalculated(lilithSign);
-        } else {
-            console.error('onSignCalculated is not a function');
         }
     };
 
-    const renderSignComponent = () => {
-        switch (resultSign) {
-            case 'Aries': return <LilithEnAries />;
-            case 'Tauro': return <LilithEnTauro />;
-            case 'Géminis': return <LilithEnGeminis />;
-            case 'Cáncer': return <LilithEnCancer />;
-            case 'Leo': return <LilithEnLeo />;
-            case 'Virgo': return <LilithEnVirgo />;
-            case 'Libra': return <LilithEnLibra />;
-            case 'Escorpio': return <LilithEnEscorpio />;
-            case 'Sagitario': return <LilithEnSagitario />;
-            case 'Capricornio': return <LilithEnCapricornio />;
-            case 'Acuario': return <LilithEnAcuario />;
-            case 'Piscis': return <LilithEnPiscis />;
-            default: return <p>No disponible</p>;
-        }
-    };
+    const SignComponent = resultSign && signComponents[resultSign];
 
     return (
-        <div className="container mt-5">
-            <h1 className="text-center">Calculadora de la Posición de Lilith</h1>
-            <div className="card p-4">
-                <div className="mb-3">
-                    <label htmlFor="birthdate" className="form-label">Fecha de Nacimiento</label>
-                    <input
-                        type="date"
-                        className="form-control"
-                        id="birthdate"
-                        value={birthdate}
-                        onChange={(e) => setBirthdate(e.target.value)}
-                    />
+        <div className="lilithcontainer">
+            <h2 className="titulo">Calculadora de Lilith</h2>
+            
+            <label className="block text-sm font-medium text-gray-700">
+                Fecha de Nacimiento:
+            </label>
+            <input
+                type="date"
+                value={birthdate}
+                onChange={(e) => setBirthdate(e.target.value)}
+                className="w-full mt-2 p-2 border rounded"
+            />
+
+            <label className="block text-sm font-medium text-gray-700 mt-4">
+                Selecciona tu género:
+            </label>
+            <select
+                value={gender}
+                onChange={(e) => setGender(e.target.value)}
+                className="w-full mt-2 p-2 border rounded"
+            >
+                <option value="">-- Selecciona --</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Hombre">Hombre</option>
+            </select>
+
+            <button
+                onClick={calculateLilith}
+                className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200"
+            >
+                Calcular
+            </button>
+
+            {resultSign && (
+                <div className="mt-4 text-center">
+                    {resultSign === "No disponible" ? (
+                        <p className="text-lg font-semibold text-red-600">
+                            Lo siento, no tengo información para esa fecha.
+                        </p>
+                    ) : (
+                        <>
+                            <p className="text-lg font-semibold">
+                                {gender === "Mujer" 
+                                    ? `Tu Lilith está en ${resultSign}`
+                                    : `Tu Lilith (lado oculto) está en ${resultSign}`}
+                            </p>
+                            {SignComponent && <SignComponent gender={gender} />}
+                        </>
+                    )}
                 </div>
-                <button onClick={calculateLilith} className="btn btn-primary">Calcular Posición de Lilith</button>
-                <div id="result" className="mt-4">
-                    {renderSignComponent()}
-                </div>
-            </div>
+            )}
         </div>
     );
 };

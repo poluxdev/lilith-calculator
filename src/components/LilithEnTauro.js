@@ -1,19 +1,35 @@
-// src/components/LilithEnTauro.js
 import React from 'react';
 
-const LilithEnTauro = () => {
+const LilithEnTauro = ({ gender }) => {
   return (
     <div className="lilith-en-tauro">
       <h1>Lilith en Tauro</h1>
-      <p><strong>Expresión del Yo:</strong> Lilith en Tauro puede intensificar tu deseo de establecer una conexión profunda con tus valores y tus sentidos. Puedes sentir una fuerte necesidad de buscar seguridad y estabilidad en tus experiencias personales y materiales.</p>
-      <p><strong>Independencia y Autonomía:</strong> Esta posición puede manifestar una búsqueda intensa de independencia en el ámbito material y emocional. Es posible que te sientas impulsado a construir tus propios recursos y a buscar una vida que refleje tus valores personales.</p>
-      <p><strong>Coraje y Assertividad:</strong> Lilith en Tauro puede infundir un sentido de determinación y resistencia. Puedes enfrentar desafíos con una gran fortaleza y estar dispuesto a defender tus principios con firmeza, especialmente en áreas relacionadas con tu seguridad y estabilidad.</p>
-      <p><strong>Desafíos en la Gestión de la Ira:</strong> La influencia de Lilith en Tauro puede llevar a una relación complicada con la frustración, especialmente en cuestiones materiales o de seguridad. Puedes necesitar aprender a manejar y canalizar estos sentimientos de manera constructiva para evitar conflictos innecesarios.</p>
-      <p><strong>Iniciativa y Liderazgo:</strong> Esta posición puede potenciar tu capacidad para tomar la iniciativa en la construcción de una base sólida para ti mismo. Puedes sentirte impulsado a crear o mantener estructuras estables en tu vida, ya sea en el ámbito profesional o personal.</p>
-      <p><strong>Autoafirmación y Confianza:</strong> Lilith en Tauro puede estimular una mayor autoafirmación en relación con tus habilidades y valores. Puedes sentir una fuerte necesidad de demostrar tu valía y tus capacidades a través de logros tangibles y estables.</p>
-      <p><strong>Confrontación con la Vulnerabilidad:</strong> Puedes encontrarte enfrentando temas relacionados con la seguridad y la estabilidad. La tarea puede ser aprender a equilibrar tu necesidad de seguridad con la aceptación de tus propias limitaciones y la flexibilidad ante el cambio.</p>
-      <p><strong>Desarrollo Personal a Través del Conflicto:</strong> Lilith en Tauro puede llevarte a enfrentar y resolver conflictos relacionados con tus valores y tu sentido de seguridad como una forma de crecimiento personal. Aprender a negociar y manejar estas áreas puede ser clave para tu desarrollo.</p>
-      <p>Estos temas y aspectos están sujetos a cómo se manifiestan en tu carta natal completa y en relación con otros factores astrológicos. La clave con Lilith en Tauro es encontrar un equilibrio entre la búsqueda de seguridad y la capacidad de adaptarse a los desafíos y cambios.</p>
+      <p>
+        Lilith en Tauro intensifica la relación con el placer, la seguridad y la materialidad. 
+        Tauro, regido por Venus, busca estabilidad y disfrute, pero Lilith aquí puede desafiar 
+        estos conceptos, generando una lucha entre el deseo de posesión y la necesidad de libertad.
+      </p>
+      {gender === "Mujer" ? (
+        <>
+          <h2>Lilith en Tauro en la carta natal de una mujer</h2>
+          <p><strong>Relación con el placer y el cuerpo:</strong> Una mujer con Lilith en Tauro tiene una conexión intensa con su sensualidad y disfrute físico. Puede sentirse poderosa cuando abraza su feminidad sin culpa.</p>
+          <p><strong>Autonomía material:</strong> No le gusta depender económicamente de nadie. Es una mujer que valora la autosuficiencia y busca crear estabilidad por sí misma.</p>
+          <p><strong>Desafío con el apego:</strong> Puede sentir un miedo inconsciente a la pérdida, lo que la lleva a aferrarse a relaciones o posesiones.</p>
+          <p><strong>Sombra y transformación:</strong> Su mayor reto es soltar el apego excesivo y aprender a confiar en el flujo natural de la vida.</p>
+        </>
+      ) : (
+        <>
+          <h2>Lilith en Tauro en la carta natal de un hombre</h2>
+          <p><strong>Atracción por mujeres sensuales e independientes:</strong> Un hombre con Lilith en Tauro se siente magnetizado por mujeres que irradian seguridad y placer en su propia piel.</p>
+          <p><strong>Conflicto con la estabilidad:</strong> Puede sentir un deseo intenso por seguridad, pero a la vez miedo a sentirse atrapado en una rutina.</p>
+          <p><strong>Impulsividad en el disfrute:</strong> Tiene una fuerte necesidad de experimentar placer, pero debe aprender a equilibrar el deseo con la responsabilidad.</p>
+          <p><strong>Sombra y evolución personal:</strong> Su desafío es soltar la necesidad de control y aprender a vivir el placer sin sentirse dominado por él.</p>
+        </>
+      )}
+      <h2>Consejos para integrar Lilith en Tauro</h2>
+      <p><strong>Para la mujer:</strong> Aprender a disfrutar sin miedo al juicio y confiar en que la seguridad viene de adentro.</p>
+      <p><strong>Para el hombre:</strong> Aceptar que el placer es un derecho, pero no debe ser una obsesión que lo gobierne.</p>
+      <p>Lilith en Tauro nos invita a conectar con nuestros sentidos sin culpa, pero también a evitar el apego excesivo. ¡Es un viaje de placer y autoconocimiento!</p>
     </div>
   );
 };
